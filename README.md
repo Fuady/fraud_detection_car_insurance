@@ -3,3 +3,4 @@ This project involves analyzing insurance claims data to detect fraudulent activ
 
 # Data
 The data was obtained from [Kaggle](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data)
+
