@@ -19,7 +19,7 @@ Using the Auto Insurance Claims dataset, the goal is to build an end-to-end mach
 4. Select and tune the best-performing model
 5. Deploy the model as a web-based prediction service
 
-# Data
+## Data
 The data was obtained from [Kaggle](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data)
 
 For a project, you repository/folder should contain the following:
