@@ -20,5 +20,14 @@ Using the Auto Insurance Claims dataset, the goal is to build an end-to-end mach
 5. Deploy the model as a web-based prediction service
 
 ## Data
-The data was obtained from [Kaggle](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data)
+The data was obtained from [Kaggle](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data). You can download directly from the website, or follow this script:
+
+```bash
+import kagglehub
+
+# Download latest version
+path = kagglehub.dataset_download("buntyshah/auto-insurance-claims-data")
+
+print("Path to dataset files:", path)
+```
 
