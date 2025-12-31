@@ -31,3 +31,4 @@ path = kagglehub.dataset_download("buntyshah/auto-insurance-claims-data")
 print("Path to dataset files:", path)
 ```
 
+Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
