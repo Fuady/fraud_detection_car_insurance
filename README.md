@@ -19,6 +19,8 @@ Using the Auto Insurance Claims dataset, the goal is to build an end-to-end mach
 4. Select and tune the best-performing model
 5. Deploy the model as a web-based prediction service
 
+The project includes a fully reproducible training pipeline with dependency management, model persistence, and clear execution instructions.
+
 ## Data
 The data was obtained from [Kaggle](https://www.kaggle.com/datasets/buntyshah/auto-insurance-claims-data). You can download directly from the website, or follow this script:
 
@@ -34,3 +36,5 @@ print("Path to dataset files:", path)
 Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
 
 Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
+
+The final fraud detection model was trained using a LightGBM classifier within a preprocessing pipeline and persisted using pickle for deployment and reproducibility.
