@@ -36,7 +36,7 @@ y = df[TARGET]
 # 2. Train-test split
 # =========================
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42, stratify=y
+    X, y, test_size=0.2, random_state=1, stratify=y
 )
 
 # =========================
@@ -93,12 +93,14 @@ y_train_proba = pipeline.predict_proba(X_train)[:, 1]
 y_test_proba = pipeline.predict_proba(X_test)[:, 1]
 
 print("\nTraining Performance")
-print("Accuracy:", accuracy_score(y_train, y_train_pred))
+print("Accuracy:", accuracy_score(y_train, y_train_proba))
 print("AUC:", roc_auc_score(y_train, y_train_proba))
+print("F1_Score:", f1_score(y_train, y_train_proba))
 
 print("\nTest Performance")
 print("Accuracy:", accuracy_score(y_test, y_test_pred))
 print("AUC:", roc_auc_score(y_test, y_test_proba))
+print("F1_Score:", f1_score(y_test, y_test_proba))
 
 print("\nClassification Report (Test)")
 print(classification_report(y_test, y_test_pred))
