@@ -110,3 +110,11 @@ python train.py
 ```bash
 models/fraud_model.pkl
 ```
+
+## Model Serving (REST API)
+The trained model is exposed via a **Flask REST API**.
+
+### Start the API
+```
+python predict.py
+```
