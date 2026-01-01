@@ -159,3 +159,39 @@ Response:
   "fraud_probability": [0.87]
 }
 ```
+
+
+## Containerization with Docker
+
+### Build Docker Image
+```
+docker build -t insurance-fraud-api .
+```
+
+### Run the Container
+```
+docker run -p 5000:5000 insurance-fraud-api
+```
+API will be available at:
+```
+http://localhost:5000
+```
+
+
+## Test the API (Docker)
+```
+curl http://localhost:5000/
+```
+```
+curl -X POST http://localhost:5000/predict \
+     -H "Content-Type: application/json" \
+     -d '{
+           "data": [
+             {
+               "age": 50,
+               "incident_severity": "Minor Damage",
+               "total_claim_amount": 3000
+             }
+           ]
+         }'
+```
