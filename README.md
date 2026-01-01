@@ -46,15 +46,7 @@ print("Path to dataset files:", path)
 8. REST API Deployment
 9. Containerization using Docker
 
-
-Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
-
-Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
-
-The final fraud detection model was trained using a LightGBM classifier within a preprocessing pipeline and persisted using pickle for deployment and reproducibility.
-
-Deployed a fraud detection model as a RESTful API using Flask, enabling real-time predictions with probabilistic outputs.
-
+## Project Structure
 ``` kotlin
 project/
 │
@@ -65,6 +57,18 @@ project/
 │   └── fraud_model.pkl
 │
 ├── train.py
+├── predict.py
+├── notebook.ipynb
+├── Dockerfile
 ├── requirements.txt
 └── README.md
 ```
+
+Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
+
+Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
+
+The final fraud detection model was trained using a LightGBM classifier within a preprocessing pipeline and persisted using pickle for deployment and reproducibility.
+
+Deployed a fraud detection model as a RESTful API using Flask, enabling real-time predictions with probabilistic outputs.
+
