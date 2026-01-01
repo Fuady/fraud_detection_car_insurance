@@ -86,6 +86,13 @@ pip install -r requirements.txt
 
 ## Model Training
 
+The training script:
+- Preprocesses numerical & categorical features
+- Trains multiple classifiers
+- Evaluates performance
+- Selects the best model
+- Saves the trained model to disk
+
 Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
 
 Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
@@ -94,3 +101,12 @@ The final fraud detection model was trained using a LightGBM classifier within a
 
 Deployed a fraud detection model as a RESTful API using Flask, enabling real-time predictions with probabilistic outputs.
 
+### Run Training
+```bash
+python train.py
+```
+
+### Output
+```bash
+models/fraud_model.pkl
+```
