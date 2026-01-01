@@ -33,6 +33,20 @@ path = kagglehub.dataset_download("buntyshah/auto-insurance-claims-data")
 print("Path to dataset files:", path)
 ```
 
+
+## Solution Approach
+
+1. Exploratory Data Analysis (EDA)
+2. Feature Engineering
+3. Model Training & Comparison
+4. Model Evaluation & Overfitting Detection
+5. Hyperparameter Tuning (GridSearchCV, 10-fold CV)
+6. Model Explainability (SHAP)
+7. Model Serialization
+8. REST API Deployment
+9. Containerization using Docker
+
+
 Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
 
 Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
