@@ -38,3 +38,17 @@ Model interpretability was conducted using SHAP with TreeExplainer for ensemble 
 Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
 
 The final fraud detection model was trained using a LightGBM classifier within a preprocessing pipeline and persisted using pickle for deployment and reproducibility.
+
+``` kotlin
+project/
+│
+├── data/
+│   └── insurance_claims.csv
+│
+├── models/
+│   └── fraud_model.pkl
+│
+├── train.py
+├── requirements.txt
+└── README.md
+```
