@@ -68,7 +68,7 @@ project/
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/fuady/insurance-fraud-detection.git
+git https://github.com/Fuady/fraud_detection_car_insurance.git
 cd insurance-fraud-detection
 ```
 
