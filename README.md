@@ -118,3 +118,44 @@ The trained model is exposed via a **Flask REST API**.
 ```
 python predict.py
 ```
+
+### Available Endpoints
+
+#### Health Check
+```bash
+GET /
+```
+
+Response:
+```bash
+{
+  "status": "ok",
+  "message": "Insurance Fraud Detection API is running"
+}
+```
+
+#### Fraud Prediction
+```
+POST /predict
+```
+Request:
+```
+{
+  "data": [
+    {
+      "age": 41,
+      "incident_severity": "Total Loss",
+      "total_claim_amount": 12000,
+      "insured_hobbies": "chess"
+    }
+  ]
+}
+```
+
+Response:
+```
+{
+  "prediction": [1],
+  "fraud_probability": [0.87]
+}
+```
