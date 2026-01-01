@@ -79,7 +79,12 @@ source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 ```
 
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
 
+## Model Training
 
 Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
 
