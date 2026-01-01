@@ -72,6 +72,15 @@ git clone https://github.com/fuady/insurance-fraud-detection.git
 cd insurance-fraud-detection
 ```
 
+### Create Virtual Environment (Optional)
+```bash
+python -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+```
+
+
+
 Model interpretability was conducted using SHAP with TreeExplainer for ensemble models to ensure stable and consistent feature attribution.
 
 Feature importance was computed using SHAP directly on the transformed feature space extracted from the fitted pipeline, ensuring alignment with model inputs.
