@@ -39,6 +39,8 @@ Feature importance was computed using SHAP directly on the transformed feature s
 
 The final fraud detection model was trained using a LightGBM classifier within a preprocessing pipeline and persisted using pickle for deployment and reproducibility.
 
+Deployed a fraud detection model as a RESTful API using Flask, enabling real-time predictions with probabilistic outputs.
+
 ``` kotlin
 project/
 │
