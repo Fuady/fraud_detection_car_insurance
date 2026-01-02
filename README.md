@@ -118,47 +118,28 @@ The trained model is exposed via a **Flask REST API**.
 ```
 python predict.py
 ```
-
-### Available Endpoints
-
-#### Health Check
-```bash
-GET /
+then you will see the following, which indicates that the API is ready
+```
+* Serving Flask app 'predict'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.7:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 307-138-162
 ```
 
-Response:
-```bash
-{
-  "status": "ok",
-  "message": "Insurance Fraud Detection API is running"
-}
+Then you can run this python notebook: `05-fraud-test.ipynb`.
+
+With single example `data_1`, the results are the following
+```
+{'Fraud': True, 'Fraud Probability': 0.6519783313945177}
 ```
 
-#### Fraud Prediction
-```
-POST /predict
-```
-Request:
-```
-{
-  "data": [
-    {
-      "age": 41,
-      "incident_severity": "Total Loss",
-      "total_claim_amount": 12000,
-      "insured_hobbies": "chess"
-    }
-  ]
-}
-```
 
-Response:
-```
-{
-  "prediction": [1],
-  "fraud_probability": [0.87]
-}
-```
 
 
 ## Containerization with Docker
