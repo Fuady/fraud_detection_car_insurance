@@ -118,9 +118,12 @@ The trained model is exposed via a **Flask REST API**.
 ```
 python predict.py
 ```
-then you will see the following, which indicates that the API is ready
+
+### Output
+
+you will see the following, which indicates that the API is ready
 ```
-* Serving Flask app 'predict'
+ * Serving Flask app 'predict'
  * Debug mode: on
 WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
  * Running on all addresses (0.0.0.0)
